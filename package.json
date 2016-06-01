@@ -1,0 +1,30 @@
+{
+  "name": "elemeno",
+  "version": "0.0.1",
+  "description": "Elemeno CMS Node.js API Wrapper",
+  "main": "lib/elemeno.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elemenohq/elemeno-node"
+  },
+  "keywords": [
+    "elemeno",
+    "api",
+    "content",
+    "management",
+    "cms"
+  ],
+  "author": "Elemeno <support@elemeno.io> (https://elemeno.io/)",
+  "contributors": [
+    "Dave Bobak <dave@elemeno.io>",
+    "Chris Erwin <chris@elemeno.io>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elemenohq/elemeno-node/issues"
+  },
+  "homepage": "https://github.com/elemenohq/elemeno-node",
+  "dependencies": {
+    "superagent": "~2.0.0"
+  }
+}
