@@ -6,7 +6,7 @@
 
 ## Documentation
 
-Documentation is available at https://docs.elemeno.io
+Documentation is available at http://docs.elemeno.io
 
 ## API Overview
 
