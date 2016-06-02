@@ -123,6 +123,7 @@ elemeno.getCollectionItem(
     console.log(item);
   }
 );
+```
 
 or `byId`:
 
