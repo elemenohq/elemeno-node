@@ -1,2 +1,6 @@
-0.0.1 June 1, 2016
+0.0.2 June 2, 2016
+  - Fixing documentation link in README.md
+  - Updating .gitignore to properly ignore npm-debug.log
+
+0.0.1 June 2, 2016
   - Initial release
