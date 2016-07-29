@@ -24,6 +24,9 @@ elemeno.setAPIKey('123e4567-e89b-12d3-a456-426655440000');
 ```js
 elemeno.getSingles(
   {
+    sort: {
+      $dateUpdated: 'ASC'
+    },
     page: 1,
     size: 20
   },
@@ -59,6 +62,9 @@ elemeno.single.get(
 ```js
 elemeno.getCollections(
   {
+    sort: {
+      $dateCreated: 'DESC'
+    },
     page: 1,
     size: 20
   },
@@ -95,8 +101,11 @@ elemeno.getCollectionItems(
   {
     filters: {
       $title: {
-        $contains: "pie"
+        $contains: 'pie'
       }
+    },
+    sort: {
+      $datePublished: 'DESC'
     },
     page: 1,
     size: 20
