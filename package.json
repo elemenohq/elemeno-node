@@ -1,6 +1,6 @@
 {
   "name": "elemeno",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Elemeno CMS Node.js API Wrapper",
   "main": "lib/elemeno.js",
   "repository": {
