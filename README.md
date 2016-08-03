@@ -30,13 +30,11 @@ elemeno.getSingles(
     page: 1,
     size: 20
   },
-  function(err, singles) {
+  function(err, response) {
     if (err) console.log(err);
 
-    // Do something with the singles
-    singles.forEach(single) {
-      console.log(single);
-    }
+    // Do something with the response
+    console.log(response);
   }
 );
 ```
@@ -44,13 +42,13 @@ elemeno.getSingles(
 #### `elemeno.getSingle(singleSlug, cb)`
 
 ```js
-elemeno.single.get(
+elemeno.getSingle(
   'about',  // singleSlug
-  function(err, single) {
-    if (err) console.log(err);
+  function(err, response) {
+    if (err) return console.log(err);
 
-    // Do something with the single
-    console.log(single);
+    // Do something with the response
+    console.log(response);
   }
 );
 ```
@@ -68,13 +66,11 @@ elemeno.getCollections(
     page: 1,
     size: 20
   },
-  function(err, collections) {
-    if (err) console.log(err);
+  function(err, response) {
+    if (err) return console.log(err);
 
-    // Do something with the collections
-    collections.forEach(collection) {
-      console.log(collection);
-    }
+    // Do something with the response
+    console.log(response);
   }
 );
 ```
@@ -84,11 +80,11 @@ elemeno.getCollections(
 ```js
 elemeno.getCollection(
   'recipes',  // collectionSlug
-  function(err, collection) {
-    if (err) console.log(err);
+  function(err, response) {
+    if (err) return console.log(err);
 
-    // Do something with the collection
-    console.log(collection);
+    // Do something with the response
+    console.log(response);
   }
 );
 ```
@@ -110,11 +106,11 @@ elemeno.getCollectionItems(
     page: 1,
     size: 20
   },
-  function(err, items) {
-    if (err) console.log(err);
+  function(err, response) {
+    if (err) return console.log(err);
 
-    // Do something with the items
-    console.log(item);
+    // Do something with the response
+    console.log(response);
   }
 );
 ```
@@ -124,12 +120,12 @@ elemeno.getCollectionItems(
 ```js
 elemeno.getCollectionItem(
   'recipes',    // collectionSlug
-  'apple-pie',  // itemSlug,
-  function(err, item) {
-    if (err) console.log(err);
+  'apple-pie',  // itemSlug
+  function(err, response) {
+    if (err) return console.log(err);
 
-    // Do something with the item
-    console.log(item);
+    // Do something with the response
+    console.log(response);
   }
 );
 ```
@@ -139,15 +135,15 @@ or `byId`:
 ```js
 elemeno.getCollectionItem(
   'recipes',    // collectionSlug
-  '765a1234-f34c-12d3-a456-562412381111',  // itemId,
+  '765a1234-f34c-12d3-a456-562412381111',  // itemId
   {
     byId: true
-  }
-  function(err, item) {
-    if (err) console.log(err);
+  },
+  function(err, response) {
+    if (err) return console.log(err);
 
-    // Do something with the item
-    console.log(item);
+    // Do something with the response
+    console.log(response);
   }
 );
 ```
