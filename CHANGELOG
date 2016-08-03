@@ -1,3 +1,8 @@
+0.1.1 Aug 3, 2016
+  - Fixing error that was thrown when the allow param of getQuery was not an array
+  - Fixing some minor issues with the code samples in README.md
+  - Adding .editorconfig file
+
 0.1.0 Jul 29, 2016
   - Adding ability to sort
   - Minor README.md cleanup
