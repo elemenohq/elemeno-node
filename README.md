@@ -34,9 +34,7 @@ elemeno.getSingles(
     if (err) console.log(err);
 
     // Do something with the singles
-    singles.forEach(single) {
-      console.log(single);
-    }
+    console.log(singles);
   }
 );
 ```
@@ -44,10 +42,10 @@ elemeno.getSingles(
 #### `elemeno.getSingle(singleSlug, cb)`
 
 ```js
-elemeno.single.get(
+elemeno.getSingle(
   'about',  // singleSlug
   function(err, single) {
-    if (err) console.log(err);
+    if (err) return console.log(err);
 
     // Do something with the single
     console.log(single);
@@ -69,12 +67,10 @@ elemeno.getCollections(
     size: 20
   },
   function(err, collections) {
-    if (err) console.log(err);
+    if (err) return console.log(err);
 
     // Do something with the collections
-    collections.forEach(collection) {
-      console.log(collection);
-    }
+    console.log(collections);
   }
 );
 ```
@@ -85,7 +81,7 @@ elemeno.getCollections(
 elemeno.getCollection(
   'recipes',  // collectionSlug
   function(err, collection) {
-    if (err) console.log(err);
+    if (err) return console.log(err);
 
     // Do something with the collection
     console.log(collection);
@@ -111,10 +107,10 @@ elemeno.getCollectionItems(
     size: 20
   },
   function(err, items) {
-    if (err) console.log(err);
+    if (err) return console.log(err);
 
     // Do something with the items
-    console.log(item);
+    console.log(items);
   }
 );
 ```
@@ -124,9 +120,9 @@ elemeno.getCollectionItems(
 ```js
 elemeno.getCollectionItem(
   'recipes',    // collectionSlug
-  'apple-pie',  // itemSlug,
+  'apple-pie',  // itemSlug
   function(err, item) {
-    if (err) console.log(err);
+    if (err) return console.log(err);
 
     // Do something with the item
     console.log(item);
@@ -139,12 +135,12 @@ or `byId`:
 ```js
 elemeno.getCollectionItem(
   'recipes',    // collectionSlug
-  '765a1234-f34c-12d3-a456-562412381111',  // itemId,
+  '765a1234-f34c-12d3-a456-562412381111',  // itemId
   {
     byId: true
-  }
+  },
   function(err, item) {
-    if (err) console.log(err);
+    if (err) return console.log(err);
 
     // Do something with the item
     console.log(item);
