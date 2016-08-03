@@ -30,11 +30,11 @@ elemeno.getSingles(
     page: 1,
     size: 20
   },
-  function(err, singles) {
+  function(err, response) {
     if (err) console.log(err);
 
-    // Do something with the singles
-    console.log(singles);
+    // Do something with the response
+    console.log(response);
   }
 );
 ```
@@ -44,11 +44,11 @@ elemeno.getSingles(
 ```js
 elemeno.getSingle(
   'about',  // singleSlug
-  function(err, single) {
+  function(err, response) {
     if (err) return console.log(err);
 
-    // Do something with the single
-    console.log(single);
+    // Do something with the response
+    console.log(response);
   }
 );
 ```
@@ -66,11 +66,11 @@ elemeno.getCollections(
     page: 1,
     size: 20
   },
-  function(err, collections) {
+  function(err, response) {
     if (err) return console.log(err);
 
-    // Do something with the collections
-    console.log(collections);
+    // Do something with the response
+    console.log(response);
   }
 );
 ```
@@ -80,11 +80,11 @@ elemeno.getCollections(
 ```js
 elemeno.getCollection(
   'recipes',  // collectionSlug
-  function(err, collection) {
+  function(err, response) {
     if (err) return console.log(err);
 
-    // Do something with the collection
-    console.log(collection);
+    // Do something with the response
+    console.log(response);
   }
 );
 ```
@@ -106,11 +106,11 @@ elemeno.getCollectionItems(
     page: 1,
     size: 20
   },
-  function(err, items) {
+  function(err, response) {
     if (err) return console.log(err);
 
-    // Do something with the items
-    console.log(items);
+    // Do something with the response
+    console.log(response);
   }
 );
 ```
@@ -121,11 +121,11 @@ elemeno.getCollectionItems(
 elemeno.getCollectionItem(
   'recipes',    // collectionSlug
   'apple-pie',  // itemSlug
-  function(err, item) {
+  function(err, response) {
     if (err) return console.log(err);
 
-    // Do something with the item
-    console.log(item);
+    // Do something with the response
+    console.log(response);
   }
 );
 ```
@@ -139,11 +139,11 @@ elemeno.getCollectionItem(
   {
     byId: true
   },
-  function(err, item) {
+  function(err, response) {
     if (err) return console.log(err);
 
-    // Do something with the item
-    console.log(item);
+    // Do something with the response
+    console.log(response);
   }
 );
 ```
