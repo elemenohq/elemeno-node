@@ -147,3 +147,14 @@ elemeno.getCollectionItem(
   }
 );
 ```
+
+## Caching
+
+The caching module uses the [simple in-memory cache module from ptarjan](https://github.com/ptarjan/node-cache).
+
+To enable it, just call:
+
+#### `elemeno.enableCache([options])`
+
+##### Options
+ - `refreshTime` : Time (in seconds) the cache will delete the stored data (and thus refresh the data on the next call). Default: 900 seconds (15 min)
