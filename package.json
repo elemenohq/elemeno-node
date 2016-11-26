@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/elemenohq/elemeno-node",
   "dependencies": {
+    "memory-cache": "^0.1.6",
     "superagent": "~2.0.0"
   }
 }
