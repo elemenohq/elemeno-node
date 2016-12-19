@@ -11,10 +11,10 @@ Documentation is available at http://docs.elemeno.io
 ## API Overview
 
 ```js
-var elemeno = require('elemeno');
+var Elemeno = require('elemeno');
 
 // Set API Key
-elemeno.setAPIKey('123e4567-e89b-12d3-a456-426655440000');
+var elemeno = new Elemeno('123e4567-e89b-12d3-a456-426655440000');
 ```
 
 ### Singles
