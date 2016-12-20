@@ -13,7 +13,6 @@ Documentation is available at http://docs.elemeno.io
 ```js
 var Elemeno = require('elemeno');
 
-// Set API Key
 var elemeno = new Elemeno('123e4567-e89b-12d3-a456-426655440000');
 
 elemeno.getCollectionItems('recipes', function(err, response) {
@@ -183,3 +182,7 @@ elemeno.getCollectionItem(
 ### Caching
 
 #### clearCache()
+
+```js 
+elemeno.clearCache();
+```
