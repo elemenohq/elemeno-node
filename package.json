@@ -25,6 +25,8 @@
   },
   "homepage": "https://github.com/elemenohq/elemeno-node",
   "dependencies": {
+    "lru-cache": "~4.0.2",
+    "object-sizeof": "~1.1.1",
     "superagent": "~2.0.0"
   },
   "engines": {
