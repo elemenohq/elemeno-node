@@ -1,5 +1,13 @@
 # Elemeno
 
+The official Node.js client for Elemeno, an API based CMS. Use this module to easily integrate your content created on Elemeno into your Node.js projects.
+
+Create an account and get started for free at https://elemeno.io
+
+## Requirements
+
+- A minimum of Node.js 4.0.0
+
 ## Installation
 
 `npm install elemeno`
@@ -26,6 +34,8 @@ elemeno.getCollectionItems('recipes', function(err, response) {
 ## Caching
 
 You have the option of caching API requests locally in memory by passing in cache options when creating your `elemeno` object. 
+
+**Note:** The respone from the Elemeno API is also cached on the Elemeno's servers for 2 minutes independent of the cache settings used on this client library. Please take this into consideration when configuring your local cache.
 
 ```js
 var Elemeno = require('elemeno');
