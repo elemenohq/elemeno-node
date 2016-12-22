@@ -35,7 +35,7 @@ elemeno.getCollectionItems('recipes', function(err, response) {
 
 You have the option of caching API requests locally in memory by passing in cache options when creating your `elemeno` object. 
 
-**Note:** The respone from the Elemeno API is also cached on the Elemeno's servers for 2 minutes independent of the cache settings used on this client library. Please take this into consideration when configuring your local cache.
+**Note:** The respone from the Elemeno API is also cached on Elemeno's servers for 2 minutes independent of the cache settings used on this client library. Please take this into consideration when configuring your local cache.
 
 ```js
 var Elemeno = require('elemeno');
