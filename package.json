@@ -27,6 +27,7 @@
   "dependencies": {
     "lru-cache": "~4.0.2",
     "object-sizeof": "~1.1.1",
+    "promise": "^7.1.1",
     "superagent": "~2.0.0"
   },
   "engines": {
