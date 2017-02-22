@@ -29,6 +29,14 @@ elemeno.getCollectionItems('recipes', function(err, response) {
 	// Do something with the response
 	console.log(response);
 });
+
+// All methods can also return promises:
+elemeno.getCollectionItems('recipes').then(function(response) {
+		// Do something with the response
+	}, function(error) {
+		// Handle the error
+	});
+
 ```
 
 ## Caching
@@ -58,7 +66,7 @@ var elemeno = new Elemeno('123e4567-e89b-12d3-a456-426655440000', options);
 
 ### Singles
 
-#### getSingles([options,] cb)
+#### getSingles([options,] [cb])
 
 ```js
 elemeno.getSingles(
@@ -78,7 +86,7 @@ elemeno.getSingles(
 );
 ```
 
-#### getSingle(singleSlug, cb)
+#### getSingle(singleSlug, [cb])
 
 ```js
 elemeno.getSingle(
@@ -94,7 +102,7 @@ elemeno.getSingle(
 
 ### Collections
 
-#### getCollections([options,] cb)
+#### getCollections([options,] [cb])
 
 ```js
 elemeno.getCollections(
@@ -114,7 +122,7 @@ elemeno.getCollections(
 );
 ```
 
-#### getCollection(collectionSlug, cb)
+#### getCollection(collectionSlug, [cb])
 
 ```js
 elemeno.getCollection(
@@ -128,7 +136,7 @@ elemeno.getCollection(
 );
 ```
 
-#### getCollectionItems(collectionSlug, [options,] cb)
+#### getCollectionItems(collectionSlug, [options,] [cb])
 
 ```js
 elemeno.getCollectionItems(
@@ -154,7 +162,7 @@ elemeno.getCollectionItems(
 );
 ```
 
-#### getCollectionItem(collectionSlug, itemSlug, [options,] cb)
+#### getCollectionItem(collectionSlug, itemSlug, [options,] [cb])
 
 ```js
 elemeno.getCollectionItem(
